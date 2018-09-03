@@ -1,0 +1,193 @@
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+textarea {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+input {
+    padding: 2px 5px; border-radius: 5px; border: none; color: #000; outline: -webkit-focus-ring-color auto 5px;
+}
+
+.row {
+    margin: 8px 0; height: 55px;
+}
+
+/*CSS for login screen*/
+
+.application {
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; background-image: url(../assets/images/login_background.jpg); background-size: 100%; overflow: hidden;
+}
+
+.application .header {
+    height: 100px; margin: 50px 0;
+}
+
+.application .header .header-label {
+    height: 100%; width: 60%; margin: 0 auto; font-size: 50px; text-align: center; color: #fff;
+}
+
+.application .body {
+    margin: 50px 0; height: calc(100% - 100px); width: 100%; color: #fff;
+}
+
+.application .body .login-container {
+    float: right; height: 100%; width: 25%; margin: 0 auto; text-align: center;
+}
+
+.application .body .login-container .login-label {
+    margin: 0 0 10px 0;
+}
+
+.application .body .login-container .password-label {
+    margin: 0 0 10px 0;
+}
+
+.application .body .login-container .login-username-input {
+    width: 150px;
+}
+
+.application .body .login-container .login-password-input {
+    width: 150px;
+}
+
+.application .body .login-container .do-login {
+    margin: 20px auto; padding: 3px; background: #ccc; width: 70px; cursor: pointer; border: none; border-radius: 5px; color: #000;
+}
+
+.application .body .register-container {
+    float: right; height: 100%; width: 25%; margin: 0 auto; text-align: center;
+}
+
+.application .body .register-container .regsiter-title {
+    
+}
+
+.application .body .register-container .register-username-label {
+    margin: 0 0 10px 0;
+}
+.application .body .register-container .register-new-username {
+    margin: 0 0 10px 0;
+}
+.application .body .register-container .register-password-label {
+    margin: 0 0 10px 0;
+}
+.application .body .register-container .register-new-password {
+    margin: 0 0 10px 0;
+}
+.application .body .register-container .do-register {
+    margin: 20px auto; padding: 3px; background: #ccc; width: 70px; cursor: pointer; border: none; border-radius: 5px; color: #000;
+}
+
+/*CSS for dashboard screen*/
+.dashboard {
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; color: #000; overflow: hidden;
+}
+
+.dashboard .header {
+    height: 45px; width: 100%; background-image: linear-gradient(141deg, #555 0%, #ddd 51%, #555 75%); font-size: 25px; line-height: 45px; text-align: center;
+}
+
+.dashboard .all-shared-notes-container {
+    float: left; padding: 10px 9px; height: calc(100% - 65px); width: 279px; background: #fff; border-right: 1px solid #000;
+    
+}
+
+.dashboard .all-shared-notes {
+    float: left; height: calc(100% - 65px); width: 280px; background: #fff; border-right: 1px solid #000; padding: 10px 4px; overflow-y: auto;
+}
+
+.dashboard .all-shared-notes-title {
+    padding-left: 5px; height: 30px; font-size: 20px;
+}
+
+.dashboard .refresh-shared-notes {
+    padding-left: 5px; height: 20px; font-size: 13px; color: #F08080; text-decoration: underline; cursor: pointer;
+}
+
+.dashboard .view-area {
+    float: left; height: calc(100% - 45px); width: calc(50% - 170px); background: #fff; padding: 0 10px;
+}
+
+.dashboard .view-area .view-note-header {
+    padding: 0 20px; height: 60px; line-height: 40px;
+}
+
+.dashboard .view-area .view-note-title {
+    float: left; padding: 0 20px; height: 40px; width: calc(100% - 105px);; line-height: 40px; font-size: 20px;
+}
+
+.dashboard .view-area .delete-note {
+    float: left; height: 40px; width: 45px; color: #f08080; text-decoration: underline; cursor: pointer;
+}
+
+.dashboard .view-area .view-note-author {
+    float: left; padding: 0 20px; height: 20px; width: calc(50% - 40px); line-height: 20px; font-size: 13px;
+}
+
+.dashboard .view-area .view-note-created-on {
+    float: left; padding: 0 20px; height: 20px; width: calc(50% - 40px); line-height: 20px; font-size: 13px; text-align: right;
+}
+
+.dashboard .view-area .view-note-body {
+    padding: 10px 40px; height: calc(100% - 110px); text-align: justify; overflow-y: auto;
+}
+
+.dashboard .create-new-note {
+    float: left; height: calc(100% - 45px); width: calc(50% - 170px); background: #fff; border-left: 1px solid #000; padding: 0 10px;
+}
+
+.dashboard .create-new-note .new-note-container {
+    padding: 5px 25px; height: 100%; width: calc(100% - 50px);
+}
+
+.dashboard .create-new-note .create-new-note-title {
+    padding-left: 5px; height: 60px; font-size: 20px; line-height: 40px;
+}
+
+.dashboard .create-new-note .new-note-container .new-note-title-label {
+    margin-bottom: 5px;
+}
+
+.dashboard .create-new-note .new-note-container .new-note-title {
+    width: calc(100% - 10px);
+}
+
+.dashboard .create-new-note .new-note-container .new-content-text {
+    height: calc(100% - 200px);
+}
+
+.dashboard .create-new-note .new-note-container .new-note-body-label {
+    margin-bottom: 5px;
+}
+
+.dashboard .create-new-note .new-note-container .new-note-body {
+    margin: 0 auto; padding: 5px; width: calc(100% - 10px); height: calc(100% - 30px); border: none; border-radius: 5px;
+}
+
+.dashboard .create-new-note .new-note-container .submit-new-note {
+    margin: 0 auto; width: 60px; background: #ddd; text-align: center; border: none; border-radius: 5px; cursor: pointer;    
+}

@@ -1,0 +1,36 @@
+{
+  "name": "deepspace9",
+  "version": "1.0.0",
+  "description": "hiring challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranavpsinha/sharednotes"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "pranavpsinha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cache-service-node-cache": "2.x",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-flash": "0.0.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.16.0",
+    "node-cache": "4.x",
+    "node-storage": "0.0.7"
+  }
+}

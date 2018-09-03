@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DS9</title>
+
+        <link rel="stylesheet" href="css/index.css" />
+
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/utils/config.js"></script>
+        <script type="text/javascript" src="assets/js/require.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div data-id="applicationLogin" class="application">
+            <div class="header">
+                <div class="header-label">
+                    Note Sharing Platform
+                </div>
+            </div>
+            <div data-id="applicationBody" class="body">
+                <div class="login-container">
+                    <div class="register-title">Login Here</div><hr>
+                    <div data-id="loginContainerUsername" class="">
+                        <div class="row">
+                            <div class="login-label">Username</div>
+                            <input data-id="username" type="text" class="login-username-input"/>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row">
+                            <div data-id="doLogin" class="do-login">Next</div>
+                        </div>
+                    </div>
+                    <div data-id="loginContainerPassword" class="hidden">
+                        <div class="row">
+                            <div class="password-label">Password</div>
+                            <input data-id="password" type="password" class="login-password-input"/>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row">
+                            <div data-id="doLogin" class="do-login">Login</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="register-container">
+                    <div class="register-title">Register Here</div><hr>
+                    <div class="row">
+                        <div class="register-username-label">Pick Username:</div>
+                        <input type="text" data-id="newUsername" class="register-new-username"/>
+                    </div>
+                    <div class="row">
+                        <div class="register-password-label">Enter Password:</div>
+                        <input type="text" data-id="newPassword" class="register-new-password" />
+                    </div>
+                    <div class="row">
+                        <div data-id="doRegister" class="do-register">Register</div>
+                    </div>
+                </div>
+            </div>
+            <div data-id="notification" class="notification">
+                
+            </div>
+        </div>
+        <div data-id="applicationDashboard" class="dashboard hidden">
+            <div class="header">Note Sharing Platform</div>
+            <div class="all-shared-notes-container">
+                <div class="all-shared-notes-title">Shared Notes</div>
+                <div data-id="refreshSharedNotes" class="refresh-shared-notes">Refresh</div><hr>
+                <div data-id="allSharedNotes"  class="all-shared-notes">
+                    <!-- will be populated -->
+                </div>
+            </div>
+            <div data-id="viewArea" class="view-area">
+                <div class="view-note-header">
+                    <div class="view-note-title">Dummy Title</div>
+                    <div class="delete-note hidden" data-url="">Delete</div>
+                    <div class="view-note-author">John Doe</div>
+                    <div class="view-note-created-on">2018-09-03</div>
+                </div><hr>                
+                <div class="view-note-body">
+                    The Avenue Range Station massacre was the murder of at least nine Aboriginal Tanganekald people, who were shot by white settlers on the Avenue Range pastoral station in the colony of South Australia around September 1848, during the Australian frontier wars. Those confirmed to have been killed were an old blind man, three women, two teenage girls, and three female children, including a baby. The sheep farmer James Brown (pictured) and his overseer, Eastwood, were suspected, and Brown was charged with the murder of "unknown aboriginal natives" in March 1849. The magistrate who committed him for trial said that there was "little question of the butchery or the butcher". Further investigation was ordered, but by the November 1849 sittings of the Supreme Court in the colonial capital of Adelaide, the case had been dropped.
+                </div>
+            </div>
+            <div data-id="createNewNote" class="create-new-note">
+                <div class="create-new-note-title">Create New Note</div><hr>
+                <div class="new-note-container">
+                    <div class="row">
+                        <div class="new-note-title-label">Enter title for Note</div>
+                        <input data-id="newNoteTitle" class="new-note-title"/>
+                    </div>
+                    <div class="row new-content-text">
+                        <div class="new-note-body-label">Enter your content below</div>
+                        <textarea data-id="newNoteBody" class="new-note-body" rows="15" columns="100"></textarea>
+                    </div>
+                    <div class="row">
+                        <div data-id="submitNewNote" class="submit-new-note">Create</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
